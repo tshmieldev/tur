@@ -1,0 +1,3 @@
+$print enter x:
+$set $1 $read
+$print YOU ENTERED: $1

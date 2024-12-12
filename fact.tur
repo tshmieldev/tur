@@ -1,0 +1,14 @@
+$set $1 $read      ; Number to factorial (1)
+$set $2 1          ; Result (initialize to 1) (2)
+$set $3 1          ; Counter (3)
+$set $4 0          ; Temporary variable for multiplication (4)
+                   ; (5)
+$set $4 $3         ; Set $4 to $3 (6)
+$set $2 ($mul $2 $4) ; Multiply $2 by $4 (7)
+$set $3 ($add $3 1) ; Increment counter (8)
+$if ($eq $3 ($add $1 1)) 11  ; If counter is $1+1, exit AND PRINT! (9)
+$goto 6            ; If not, continue (10)
+$print Factorial of $1 is $2 . ; (11)
+$return 0          ; End program (12)
+
+

@@ -1,0 +1,12 @@
+$set $1 $read           ; Number to square (1)
+$set $2 0               ; Result (initialize to 0) (2)
+$set $3 0               ; Counter (3)
+$set $4 0               ; Temporary variable for multiplication (4)
+$set $4 $1              ; Add $1 to $4 (6)
+                        ; (7)
+$set $2 ($add $2 $4)    ; Add $4 to $2 (8)
+$set $3 ($add $3 1)     ; Increment counter (9)
+$if ($eq $3 $1) 11      ; If multiplied 5 times exit (10)
+$goto 6                 ; (11) If not, continue. 
+$print Square of $1 is $2 . ; (12)
+$return 0               ; End program (13)

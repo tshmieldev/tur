@@ -1,0 +1,18 @@
+$setnull $0
+$print Enter a number: 
+$set $1 $read
+$set $9 $1
+$set $2 0
+$goto 10
+$set $1 $2
+$set $2 0
+
+$set $2 ($add $2 ($mod $1 10))
+$set $1 ($divint $1 10)
+$if ($eq $1 0) 14
+$goto 10
+$if ($eq ($divint $2 10) 0) 16
+$goto 7
+$print trz\(
+$print $9
+$print \) = $2
