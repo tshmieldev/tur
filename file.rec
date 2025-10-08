@@ -1,0 +1,17 @@
+$print Enter a number:
+$set $ref 1 $read
+$set $ref 2 1
+$set $ref 3 1
+$set $ref 4 0 
+
+$set $ref 4 $get 3
+$set $ref 2 $mul $get 2 $get 4
+$set $ref 3 $add $get 3 1
+$if $eq $get 3 $add $get 1 1 14
+
+
+$goto 7
+$print Factorial of $get 1 is $get 2
+$print .
+$println
+$return $get 2

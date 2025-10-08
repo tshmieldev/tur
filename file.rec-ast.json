@@ -1,0 +1,214 @@
+[
+  {
+    "args": [
+      "Enter",
+      "a",
+      "number:",
+      {
+        "args": [
+          "_"
+        ],
+        "command": "$get"
+      }
+    ],
+    "command": "$print"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "1"
+        ],
+        "command": "$ref"
+      },
+      {
+        "args": [],
+        "command": "$read"
+      }
+    ],
+    "command": "$set"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "2"
+        ],
+        "command": "$ref"
+      },
+      "1"
+    ],
+    "command": "$set"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "3"
+        ],
+        "command": "$ref"
+      },
+      "1"
+    ],
+    "command": "$set"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "4"
+        ],
+        "command": "$ref"
+      },
+      "0"
+    ],
+    "command": "$set"
+  },
+  "",
+  {
+    "args": [
+      {
+        "args": [
+          "4"
+        ],
+        "command": "$ref"
+      },
+      {
+        "args": [
+          "3"
+        ],
+        "command": "$get"
+      }
+    ],
+    "command": "$set"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "2"
+        ],
+        "command": "$ref"
+      },
+      {
+        "args": [
+          {
+            "args": [
+              "2"
+            ],
+            "command": "$get"
+          },
+          {
+            "args": [
+              "4"
+            ],
+            "command": "$get"
+          }
+        ],
+        "command": "$mul"
+      }
+    ],
+    "command": "$set"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "3"
+        ],
+        "command": "$ref"
+      },
+      {
+        "args": [
+          {
+            "args": [
+              "3"
+            ],
+            "command": "$get"
+          },
+          "1"
+        ],
+        "command": "$add"
+      }
+    ],
+    "command": "$set"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          {
+            "args": [
+              "3"
+            ],
+            "command": "$get"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  "1"
+                ],
+                "command": "$get"
+              },
+              "1"
+            ],
+            "command": "$add"
+          }
+        ],
+        "command": "$eq"
+      },
+      "14"
+    ],
+    "command": "$if"
+  },
+  "",
+  "",
+  {
+    "args": [
+      "7"
+    ],
+    "command": "$goto"
+  },
+  {
+    "args": [
+      "Factorial",
+      "of",
+      {
+        "args": [
+          "1"
+        ],
+        "command": "$get"
+      },
+      "is",
+      {
+        "args": [
+          "2"
+        ],
+        "command": "$get"
+      }
+    ],
+    "command": "$print"
+  },
+  {
+    "args": [
+      "."
+    ],
+    "command": "$print"
+  },
+  {
+    "args": [],
+    "command": "$println"
+  },
+  {
+    "args": [
+      {
+        "args": [
+          "2"
+        ],
+        "command": "$get"
+      }
+    ],
+    "command": "$return"
+  }
+]
