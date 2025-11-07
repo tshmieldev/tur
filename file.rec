@@ -1,4 +1,4 @@
-$print Enter a number:
+$print Enter a number: 
 $set $ref 1 $read
 $set $ref 2 1
 $set $ref 3 1

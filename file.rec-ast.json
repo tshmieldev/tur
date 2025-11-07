@@ -3,13 +3,7 @@
     "args": [
       "Enter",
       "a",
-      "number:",
-      {
-        "args": [
-          "_"
-        ],
-        "command": "$get"
-      }
+      "number:"
     ],
     "command": "$print"
   },
@@ -210,5 +204,6 @@
       }
     ],
     "command": "$return"
-  }
+  },
+  ""
 ]
